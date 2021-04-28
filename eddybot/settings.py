@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-i4*^&qfkjsx)q)qo1^=4r2s_@)jix(-fwteqso%jdik)^bn!k0
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+# false 일 경우 서버 아이디 주소가 명시되어야 한다.
 ALLOWED_HOSTS = []
 
 
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 클래스명.apps. -> apps.py 파일의 클래스이름 1.
+    'students.apps.StudentsConfig',
 ]
 
 MIDDLEWARE = [
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
