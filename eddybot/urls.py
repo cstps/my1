@@ -17,5 +17,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    # URL(클라이언트 요청 URL) , view(함수 또는 메소드)
     path('admin/', admin.site.urls),
 ]
